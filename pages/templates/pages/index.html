@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Onet Chemistry/Thermodynamics API</title>
+</head>
+<body>
+<h1>This site is an API for Thermodynamics and Chemistry</h1>
+<h2>Examples</h2>
+<p>
+<ul>
+    <li>
+        <a href="{% url 'properties:solutions' 'air' %}?substances=air&TP=300,101325+400,101325+400,150000">Air</a>
+    </li>
+    <li>
+        <a href="{% url 'properties:solutions' 'liquidvapor' %}?substances=water&TP=280,101325+300,101325+350,101325+400,101325">Water liquid/vapor</a>
+    </li>
+</ul>
+</p>
+
+</body>
+</html>

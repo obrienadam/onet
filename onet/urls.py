@@ -17,7 +17,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^$', include('pages.urls', namespace='pages')),
+    url(r'^', include('pages.urls', namespace='pages')),
     url(r'^api/properties/', include('properties.urls', namespace='properties')),
     url(r'^admin/', include(admin.site.urls)),
 ]
